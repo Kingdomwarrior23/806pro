@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="806 Pro — The Pro Network for the 806. Find trusted local pros for any job in Lubbock and West Texas. Free to use. No obligation. Results in 15 minutes.">
+  <title>806 Pro | The Pro Network for the 806 | Lubbock & West Texas</title>
+  <link rel="canonical" href="https://806pro.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://806pro.com/">
+  <meta property="og:title" content="806 Pro — The Pro Network for the 806">
+  <meta property="og:description" content="Find trusted local pros for any job in Lubbock and West Texas. Free to use. No obligation. Results in 15 minutes.">
+  <meta property="og:image" content="https://806pro.com/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "806 Pro",
+    "description": "The Pro Network for the 806. Connecting Lubbock and West Texas homeowners with vetted local professionals across roofing, HVAC, real estate, dental, and plumbing.",
+    "url": "https://806pro.com",
+    "areaServed": {"@type": "City", "name": "Lubbock", "sameAs": "https://en.wikipedia.org/wiki/Lubbock,_Texas"},
+    "slogan": "The Pro Network for the 806"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red: #E8191B; --red-dark: #c01214;
+      --black: #000000; --white: #ffffff;
+      --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb;
+      --gray-600: #4b5563; --gray-700: #374151; --gray-900: #111827;
+      --radius: 16px; --shadow: 0 4px 24px rgba(0,0,0,0.08); --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; color: var(--gray-900); background: var(--black); line-height: 1.6; }
+
+    /* HEADER */
+    header { background: var(--black); padding: 18px 32px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .logo { font-size: 28px; font-weight: 900; color: var(--white); letter-spacing: -0.04em; }
+    .logo span { color: var(--red); }
+    .logo-tag { font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.4); display: block; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; }
+    .header-phone { color: rgba(255,255,255,0.7); font-size: 14px; font-weight: 600; text-decoration: none; }
+    .header-phone:hover { color: var(--white); }
+
+    /* HERO */
+    .hero { background: var(--black); color: var(--white); padding: 100px 32px 80px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(232,25,27,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(36px, 7vw, 72px); font-weight: 900; line-height: 1.0; letter-spacing: -0.04em; margin-bottom: 24px; }
+    .hero h1 em { color: var(--red); font-style: normal; display: block; }
+    .hero p { font-size: clamp(17px, 2.5vw, 22px); color: rgba(255,255,255,0.7); max-width: 560px; margin: 0 auto 48px; }
+    .hero-trust { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-bottom: 64px; font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); }
+    .hero-trust span::before { content: '✓ '; color: var(--red); font-weight: 800; }
+
+    /* CATEGORY GRID */
+    .category-section { background: var(--white); padding: 80px 32px; }
+    .category-section h2 { font-size: clamp(24px, 4vw, 40px); font-weight: 900; letter-spacing: -0.03em; margin-bottom: 12px; text-align: center; }
+    .category-section .sub { font-size: 18px; color: var(--gray-600); text-align: center; margin-bottom: 52px; }
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
+    .cat-card {
+      background: var(--black);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: transform .15s, box-shadow .15s;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .cat-card:hover { transform: translateY(-3px); box-shadow: 0 12px 48px rgba(0,0,0,0.3); }
+    .cat-icon { font-size: 40px; margin-bottom: 16px; }
+    .cat-label { font-size: 11px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+    .cat-title { font-size: 22px; font-weight: 900; color: var(--white); letter-spacing: -0.02em; margin-bottom: 10px; line-height: 1.2; }
+    .cat-desc { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.6; flex: 1; margin-bottom: 20px; }
+    .cat-cta { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; color: var(--red); }
+    .cat-cta::after { content: '→'; }
+
+    /* ABOUT */
+    .about-section { background: var(--gray-50); padding: 80px 32px; }
+    .about-inner { max-width: 800px; margin: 0 auto; text-align: center; }
+    .about-section h2 { font-size: clamp(24px, 4vw, 36px); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 20px; }
+    .about-section p { font-size: 18px; color: var(--gray-600); line-height: 1.7; margin-bottom: 16px; }
+    .about-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 20px; margin-top: 48px; }
+    .about-stat { text-align: center; }
+    .about-stat-num { font-size: 36px; font-weight: 900; color: var(--red); letter-spacing: -0.03em; }
+    .about-stat-label { font-size: 14px; color: var(--gray-600); font-weight: 500; margin-top: 4px; }
+
+    /* HOW IT WORKS */
+    .how-section { background: var(--black); padding: 80px 32px; }
+    .how-inner { max-width: 1000px; margin: 0 auto; }
+    .how-section h2 { font-size: clamp(24px, 4vw, 36px); font-weight: 900; color: var(--white); letter-spacing: -0.02em; margin-bottom: 12px; text-align: center; }
+    .how-section .sub { font-size: 17px; color: rgba(255,255,255,0.5); text-align: center; margin-bottom: 52px; }
+    .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 32px; }
+    .how-step { text-align: center; }
+    .how-num { width: 56px; height: 56px; background: var(--red); color: var(--white); border-radius: 50%; font-size: 24px; font-weight: 900; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
+    .how-step h3 { font-size: 18px; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .how-step p { font-size: 15px; color: rgba(255,255,255,0.55); }
+
+    /* FINAL CTA */
+    .cta-section { background: var(--red); padding: 80px 32px; text-align: center; }
+    .cta-section h2 { font-size: clamp(28px, 5vw, 48px); font-weight: 900; color: var(--white); letter-spacing: -0.03em; margin-bottom: 16px; }
+    .cta-section p { font-size: 18px; color: rgba(255,255,255,0.85); margin-bottom: 40px; }
+    .cta-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 16px 28px; border-radius: 10px; font-size: 15px; font-weight: 800; text-decoration: none; transition: transform .1s; }
+    .cta-btn:hover { transform: translateY(-1px); }
+    .cta-btn-white { background: var(--white); color: var(--red-dark); }
+    .cta-btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); }
+
+    /* FOOTER */
+    footer { background: #0a0a0a; color: rgba(255,255,255,0.3); padding: 40px 32px; text-align: center; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.06); }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    footer a:hover { color: var(--white); }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-bottom: 20px; font-weight: 600; font-size: 13px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .hero { padding: 64px 20px 56px; }
+      .category-section, .about-section, .how-section, .cta-section { padding: 60px 20px; }
+      header { padding: 16px 20px; }
+      .cat-grid { grid-template-columns: 1fr; }
+    }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="logo">806 <span>Pro</span></div>
+    <span class="logo-tag">The Pro Network for the 806</span>
+  </div>
+  <a href="tel:+18063550000" class="header-phone">📞 (806) 355-0000</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Lubbock &amp; West Texas</div>
+  <h1>806 Pro<em>The Pro Network for the 806</em></h1>
+  <p>Find trusted local pros for any job in Lubbock and West Texas. Free to use. No obligation. Results in 15 minutes.</p>
+  <div class="hero-trust">
+    <span>Licensed Pros</span>
+    <span>Lubbock-Based</span>
+    <span>Background Checked</span>
+    <span>Free to Homeowners</span>
+    <span>15-Min Response</span>
+  </div>
+</section>
+
+<!-- CATEGORY CARDS -->
+<section class="category-section">
+  <h2>What do you need help with?</h2>
+  <p class="sub">Pick a category — we'll match you to vetted local pros in 15 minutes.</p>
+  <div class="cat-grid reveal">
+    <a href="https://lubbockroofingleads.com" class="cat-card">
+      <div class="cat-icon">🏠</div>
+      <div class="cat-label">Roofing</div>
+      <div class="cat-title">Find a Roofer</div>
+      <div class="cat-desc">Hail damage, roof replacement, leak repair. 306 hail events near Lubbock since 2004. Free inspection from licensed local roofers.</div>
+      <div class="cat-cta">Get Free Quotes</div>
+    </a>
+    <a href="https://lubbockhvacleads.com" class="cat-card">
+      <div class="cat-icon">❄️</div>
+      <div class="cat-label">HVAC</div>
+      <div class="cat-title">Find an HVAC Pro</div>
+      <div class="cat-desc">AC repair, heating service, system replacement. Lubbock averages 10+ days above 100°F. Same-day service from licensed local techs.</div>
+      <div class="cat-cta">Get Same-Day Service</div>
+    </a>
+    <a href="https://lubbockrealestateleads.com" class="cat-card">
+      <div class="cat-icon">🏡</div>
+      <div class="cat-label">Real Estate</div>
+      <div class="cat-title">Find a Realtor</div>
+      <div class="cat-desc">Buy or sell in Lubbock. Median $235K, 1,611 active listings. Free matching with licensed local REALTORS who have real MLS data.</div>
+      <div class="cat-cta">Get Free Agent Match</div>
+    </a>
+    <a href="https://lubbockdentistleads.com" class="cat-card">
+      <div class="cat-icon">🦷</div>
+      <div class="cat-label">Dental</div>
+      <div class="cat-title">Find a Dentist</div>
+      <div class="cat-desc">Routine, emergency, cosmetic, implants. Same-day appointments available. Only 53.7% of Lubbock residents see a dentist annually — don't be in the other half.</div>
+      <div class="cat-cta">Find a Dentist</div>
+    </a>
+    <a href="https://lubbockplumbingleads.com" class="cat-card">
+      <div class="cat-icon">🔧</div>
+      <div class="cat-label">Plumbing</div>
+      <div class="cat-title">Find a Plumber</div>
+      <div class="cat-desc">Emergency leaks, drain clearing, water heater, slab leaks. Lubbock's hard water and clay soil demand local plumbing expertise. Free estimates.</div>
+      <div class="cat-cta">Get Free Estimate</div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="about-inner reveal">
+    <h2>Built for Lubbock. By Lubbock.</h2>
+    <p>We connect Lubbock homeowners and businesses with vetted local professionals. Free to use. No obligation. Results in 15 minutes.</p>
+    <p>We built 806 Pro because national platforms don't know which Lubbock streets flood after a storm, which HVAC company actually answers on a 104°F Sunday, or which roofer won't walk if you mention hail insurance. Local knowledge matters — so we keep it local.</p>
+    <div class="about-stats">
+      <div class="about-stat"><div class="about-stat-num">5</div><div class="about-stat-label">Pro Categories</div></div>
+      <div class="about-stat"><div class="about-stat-num">100%</div><div class="about-stat-label">Lubbock-Based Pros</div></div>
+      <div class="about-stat"><div class="about-stat-num">15 min</div><div class="about-stat-label">Average Response Time</div></div>
+      <div class="about-stat"><div class="about-stat-num">Free</div><div class="about-stat-label">Always for Homeowners</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="how-inner">
+    <h2>How 806 Pro Works</h2>
+    <p class="sub">Three steps. 15 minutes. No cost to you.</p>
+    <div class="how-steps reveal">
+      <div class="how-step">
+        <div class="how-num">1</div>
+        <h3>Choose Your Category</h3>
+        <p>Roofing, HVAC, real estate, dental, or plumbing — pick the service you need.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">2</div>
+        <h3>Submit Your Request</h3>
+        <p>Fill out a 60-second form with what you need. No account required, no credit card.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">3</div>
+        <h3>Get Matched in 15 Min</h3>
+        <p>We connect you to vetted, licensed local pros. Compare your options and pick the best fit — for free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <h2>Ready to Find Your Pro?</h2>
+  <p>Lubbock's most trusted pro network. Free. Fast. Local.</p>
+  <div class="cta-grid">
+    <a href="https://lubbockroofingleads.com" class="cta-btn cta-btn-white">🏠 Find a Roofer</a>
+    <a href="https://lubbockhvacleads.com" class="cta-btn cta-btn-white">❄️ Find HVAC</a>
+    <a href="https://lubbockrealestateleads.com" class="cta-btn cta-btn-white">🏡 Find a Realtor</a>
+    <a href="https://lubbockdentistleads.com" class="cta-btn cta-btn-white">🦷 Find a Dentist</a>
+    <a href="https://lubbockplumbingleads.com" class="cta-btn cta-btn-white">🔧 Find a Plumber</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="https://lubbockroofingleads.com">Lubbock Roofing</a>
+    <a href="https://lubbockhvacleads.com">Lubbock HVAC</a>
+    <a href="https://lubbockrealestateleads.com">Lubbock Real Estate</a>
+    <a href="https://lubbockdentistleads.com">Lubbock Dentist</a>
+    <a href="https://lubbockplumbingleads.com">Lubbock Plumbing</a>
+  </div>
+  <p>© 2026 806 Pro — Lubbock, TX</p>
+  <p style="margin-top:8px;">806 Pro is a <a href="https://806pro.com">806 Growth</a> platform — Lubbock, TX</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
