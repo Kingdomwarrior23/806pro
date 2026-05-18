@@ -400,6 +400,10 @@
     /* ─── REVEAL ANIMATION ──────────────────────────────────── */
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .55s ease; }
     .reveal.visible { opacity: 1; transform: none; }
+    /* Fallback: if JS fails or is disabled, all sections stay visible */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
 
     /* ─── TRUST BAR SCROLLS WITH STICKY HEADER ─────────────── */
     @media (max-width: 640px) {
@@ -936,6 +940,11 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Safety net: if observer doesn't fire within 3s (e.g. prerender), show everything
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+}, 3000);
 
 // ─── SOCIAL PROOF DYNAMIC COUNT ───────────────────────────
 // GHL_INTEGRATION: Optionally fetch live count from a Cloudflare Worker or GHL custom value
