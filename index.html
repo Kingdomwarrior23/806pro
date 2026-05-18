@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Last updated: 2026-05-18 — Added landscaping, electrical, pest control. Logo img tag added. All niche domains linked. -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="806 Pro — Lubbock's trusted pro network. Free matching with licensed, background-checked local contractors. HVAC, roofing, plumbing, real estate, dental and more. 15-minute response.">
+  <meta name="description" content="806 Pro — Lubbock's trusted pro network. Free matching with licensed, background-checked local contractors across HVAC, plumbing, electrical, pest control, landscaping, roofing, real estate, dental and more. 15-minute response guaranteed.">
   <title>806 Pro | Lubbock's Pro Network — Free Matching in 15 Minutes</title>
   <link rel="canonical" href="https://806pro.com/">
 
@@ -11,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://806pro.com/">
   <meta property="og:title" content="806 Pro — Lubbock's Pro Network | Free Matching in 15 Minutes">
-  <meta property="og:description" content="Free matching with licensed, background-checked Lubbock pros. HVAC, roofing, plumbing, real estate, dental and more. Respond in 15 minutes.">
+  <meta property="og:description" content="Free matching with licensed, background-checked Lubbock pros across HVAC, plumbing, electrical, pest control, landscaping, roofing and more. Response in 15 minutes.">
   <meta property="og:image" content="https://806pro.com/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -40,6 +41,11 @@
           "addressCountry": "US"
         },
         "sameAs": [
+          "https://806hvac.com",
+          "https://806plumbing.com",
+          "https://806electrical.com",
+          "https://806pestcontrol.com",
+          "https://806landscaping.com",
           "https://lubbockhvacleads.com",
           "https://lubbockroofingleads.com",
           "https://lubbockplumbingleads.com",
@@ -381,9 +387,10 @@
 
     /* ─── FOOTER ────────────────────────────────────────────── */
     footer { background: #080808; color: var(--gray-600); padding: 56px 24px 32px; border-top: 1px solid #181818; }
-    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; }
-    @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; } }
-    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; gap: 28px; } }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px; margin-bottom: 40px; }
+    @media (max-width: 1024px) { .footer-inner { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+    @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr 1fr; gap: 24px; } }
+    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; gap: 24px; } }
     .footer-col h4 { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.4); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 16px; }
     .footer-brand .logo-large { font-size: 26px; font-weight: 900; color: var(--white); letter-spacing: -0.03em; margin-bottom: 6px; }
     .footer-brand .logo-large span { color: var(--red); }
@@ -425,6 +432,7 @@
   <span>Background Checked</span>
   <span>Free to Customers</span>
   <span>15-Min Response</span>
+  <span>6 Service Categories</span>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
@@ -432,8 +440,10 @@
 ══════════════════════════════════════════════════════════════ -->
 <header role="banner">
   <a href="/" class="logo" aria-label="806 Pro — Home">
-    806 <span>Pro</span>
-    <span class="logo-sub">The Pro Network for the 806</span>
+    <img src="/logo.png" alt="806 Pro — The Professional Standard of West Texas"
+      height="48" style="display:block;"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+    <span style="display:none;">806 <span style="color:var(--red)">Pro</span><span class="logo-sub">The Pro Network for the 806</span></span>
   </a>
   <nav class="nav-links" aria-label="Primary navigation">
     <a href="#services" class="nav-link">Services</a>
@@ -502,8 +512,14 @@
           <button type="button" class="cat-btn" data-field="service" data-value="Dental">
             <span class="icon">🦷</span>Dental
           </button>
+          <button type="button" class="cat-btn" data-field="service" data-value="Landscaping">
+            <span class="icon">🌿</span>Landscaping
+          </button>
+          <button type="button" class="cat-btn" data-field="service" data-value="Electrical">
+            <span class="icon">⚡</span>Electrical
+          </button>
           <button type="button" class="cat-btn" data-field="service" data-value="Other">
-            <span class="icon">⚡</span>Other
+            <span class="icon">🔜</span>Other
           </button>
         </div>
         <button type="button" class="submit-btn" id="next-btn" onclick="goStep2()" disabled>
@@ -553,8 +569,8 @@
 <div class="stats-row reveal">
   <div class="stats-inner">
     <div>
-      <div class="stat-num">5+</div>
-      <div class="stat-label">Niche service categories covered</div>
+      <div class="stat-num">8+</div>
+      <div class="stat-label">Service categories covered across Lubbock</div>
     </div>
     <div>
       <div class="stat-num">15 min</div>
@@ -612,10 +628,28 @@
         <div class="service-desc">Lubbock dentists accepting new patients — matched to your insurance.</div>
         <span class="service-cta" aria-hidden="true">Get Matched →</span>
       </a>
-      <div class="service-card coming-soon" aria-label="Coming soon services" aria-disabled="true">
-        <div class="service-icon" aria-hidden="true">🔌</div>
+      <a href="https://806landscaping.com" class="service-card" aria-label="Get matched with landscaping pros">
+        <div class="service-icon" aria-hidden="true">🌿</div>
+        <div class="service-name">Landscaping</div>
+        <div class="service-desc">Lawn care, irrigation, design, tree service and seasonal cleanup from licensed Lubbock landscapers.</div>
+        <span class="service-cta" aria-hidden="true">Get Matched →</span>
+      </a>
+      <a href="https://806electrical.com" class="service-card" aria-label="Get matched with electrical pros">
+        <div class="service-icon" aria-hidden="true">⚡</div>
+        <div class="service-name">Electrical</div>
+        <div class="service-desc">Panel upgrades, outlets, emergency repairs and EV charger installs from licensed Lubbock electricians.</div>
+        <span class="service-cta" aria-hidden="true">Get Matched →</span>
+      </a>
+      <a href="https://806pestcontrol.com" class="service-card" aria-label="Get matched with pest control pros">
+        <div class="service-icon" aria-hidden="true">🦂</div>
+        <div class="service-name">Pest Control</div>
+        <div class="service-desc">Scorpions, roaches, termites and rodents handled by licensed Lubbock pest control pros.</div>
+        <span class="service-cta" aria-hidden="true">Get Matched →</span>
+      </a>
+      <div class="service-card coming-soon" aria-label="Coming soon" aria-disabled="true">
+        <div class="service-icon" aria-hidden="true">🔜</div>
         <div class="service-name">More Coming Soon</div>
-        <div class="service-desc">Electrical • Gutters • Landscaping</div>
+        <div class="service-desc">Gutters • Pest Control • More West Texas niches launching soon</div>
         <span class="coming-label">Launching soon</span>
       </div>
     </div>
@@ -788,7 +822,9 @@
 <footer role="contentinfo">
   <div class="footer-inner">
     <div class="footer-brand footer-col">
-      <div class="logo-large">806 <span>Pro</span></div>
+      <img src="/logo.png" alt="806 Pro" height="40" style="display:block;margin-bottom:6px;"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="logo-large" style="display:none;">806 <span>Pro</span></div>
       <div class="tagline">The Pro Network for the 806</div>
       <div class="powered">Powered by 806 Growth · Member of the 806 Network</div>
     </div>
@@ -800,6 +836,9 @@
         <li><a href="https://lubbockplumbingleads.com">Plumbing</a></li>
         <li><a href="https://lubbockrealestateleads.com">Real Estate</a></li>
         <li><a href="https://lubbockdentistleads.com">Dental</a></li>
+        <li><a href="https://806landscaping.com">Landscaping</a></li>
+        <li><a href="https://806electrical.com">Electrical</a></li>
+        <li><a href="https://806pestcontrol.com">Pest Control</a></li>
         <li><a href="#services">All Services →</a></li>
       </ul>
     </div>
@@ -810,6 +849,16 @@
         <li><a href="https://806connect.com">806 Connect</a></li>
         <li><a href="https://806culture.com">806 Culture</a></li>
         <li><a href="https://unolbk.org" rel="noopener">UNO Community Partner</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Pro Network</h4>
+      <ul class="footer-links">
+        <li><a href="https://806hvac.com">806 HVAC</a></li>
+        <li><a href="https://806plumbing.com">806 Plumbing</a></li>
+        <li><a href="https://806electrical.com">806 Electrical</a></li>
+        <li><a href="https://806pestcontrol.com">806 Pest Control</a></li>
+        <li><a href="https://806landscaping.com">806 Landscaping</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -825,7 +874,7 @@
     </div>
   </div>
   <div class="footer-bar">
-    <p>© 2025 806 Pro. Built in Lubbock, Texas.</p>
+    <p>© 2026 806 Pro. Built in Lubbock, Texas.</p>
     <a href="#get-matched">Back to Top ↑</a>
   </div>
 </footer>
