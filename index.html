@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>806 Pro | Coming Soon</title>
   <meta name="description" content="806 Pro — Lubbock's pro network. Licensed, vetted local contractors. Coming soon.">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://806pro.com/">
@@ -303,22 +303,18 @@
 
       const email = emailInput.value.trim();
 
-      // GHL webhook — swap in real webhook URL when ready
-      const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/qpJIthlI0j2Km9viDFGO/webhook-trigger/806pro-waitlist';
-
       try {
-        await fetch(GHL_WEBHOOK, {
+        await fetch('https://806-api.vercel.app/api/waitlist', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            email: email,
-            source: '806pro-waitlist',
-            timestamp: new Date().toISOString()
+            email,
+            market: 'Lubbock',
+            source: '806pro.com'
           })
         });
-      } catch (_) {
-        // Fail silently — show success either way, log separately
-      }
+      } catch (_) {}
+
 
       form.style.display = 'none';
       success.style.display = 'block';
